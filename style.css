@@ -1,0 +1,175 @@
+* {
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    background-color: black;
+    color: white;
+    border: 2px solid green;
+}
+#FullPage {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+}
+#modalOverLay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.645);
+    top: 0px;
+    left: 0px;
+}
+.modalHidden {
+    z-index: -1;
+    opacity: 0;
+}
+.modalVisible {
+    z-index: 1;
+    opacity: 1;
+}
+.noScroll {
+    overflow: hidden;
+}
+#modalBox {
+    background-color: rgb(209, 224, 221);
+    width: 350px;
+    border-radius: 8px;
+    padding: 25px 20px;
+    margin: auto;
+    color: black;
+    margin-top: 10px;
+    transition: opacity 0.5s ease;
+}
+.opacityZero {
+    opacity: 0;
+}
+.opacityOne {
+    opacity: 1;
+}
+h3 {
+    font-size: 25px;
+    font-weight: 550;
+    margin-bottom: 8px;
+    letter-spacing: 0.2px;
+}
+#modalBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0px 0px 0px;
+}
+.modalButton {
+    display: block;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: rgb(230, 171, 111);
+}
+.modalButton:hover {
+    background-color: rgb(241, 114, 100);
+}
+#Box {
+    margin: 50px;
+}
+h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 143);
+}
+#Header {
+    position: relative;
+    display: flex;
+    margin: 0px 0px 40px 0px;
+}
+#inputField {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    padding: 1.4rem 1rem 0.5rem;
+    background: transparent;
+    border: 1px solid grey;
+    border-radius: 3px;
+    height: 56px;
+    font-size: 1.4rem;
+    outline: none;
+    color: white;
+}
+#newTaskPlaceHolder {
+    position: absolute;
+    color: rgb(170, 167, 167);
+    top: 18px;
+    left: 17px;
+    font-size: 1.2rem;
+    pointer-events: none;
+    transition: top .3s ease-in-out, font-size .3s ease-in-out;
+}
+#inputField:valid, #inputField:focus {
+    outline: 4px solid blue;
+    + #newTaskPlaceHolder {
+        top: 8px;
+        font-size: 0.7rem;
+    }
+}
+#addBtn {
+    display: block;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px 0px 0px 20px;
+    padding: 0px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#addBtn:hover {
+    background-color: rgb(91, 255, 54);
+}
+#taskListHeader {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-bottom: 10px;
+    color: rgb(255, 133, 96);
+}
+.taskListItems {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+.ItemButton {
+    font-weight: 700;
+    background-color: white;
+    border: 2px solid blue;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ItemButton:hover {
+    background-color: rgb(255, 70, 70);
+}
+#clearAllBtn {
+    display: block;
+    background-color: rgb(255, 95, 95);
+    border: none;
+    font-size: 16px;
+    font-weight: 900;
+    margin: 30px 0px 0px 0px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#clearAllBtn:hover {
+    background-color: rgb(255, 50, 50);
+    transform: scale(1.05);
+}

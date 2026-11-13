@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>to-do Modal PopUp</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="/Project-3-To-Do_List/Favicon.png" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="FullPage">
+            <div id="modalOverLay" class="modalHidden">
+                <div id="modalBox" class="opacityZero">
+                    <h3>Hello!</h3>
+                    <p>Are you sure you want to delete all tasks?</p>
+                    <div id="modalBtns">
+                        <button id="confirmClear" class="modalButton">Yes</button>
+                        <button id="cancelClear" class="modalButton">No</button>
+                    </div>
+                </div>
+            </div>
+            <div id="Box">
+                <h2>To-do list Tracker</h2>
+                <div id="Header">
+                    <input type="text" id="inputField" required>
+                    <p id="newTaskPlaceHolder">New Task</p>
+                    <button id="addBtn">Add</button>
+                </div>
+                <div id="Footer">
+                    <p id="taskListHeader"></p>
+                    <ul id="taskList"></ul>
+                    <button id="clearAllBtn">Clear All</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
